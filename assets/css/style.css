@@ -1,6 +1,23 @@
 /*Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Patrick+Hand+SC&display=swap');
 
+
+/*General styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Patrick Hand SC', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /*header*/
 
 /*Main*/
