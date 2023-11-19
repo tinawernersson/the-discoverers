@@ -105,12 +105,12 @@ text-align:center;
 }
 #presentation {
 width: 600px;
-height: 450px;
-background-color: rgba(255, 255, 255, 0.763);
+height: 475px;
+background-color: rgba(71, 192, 65, 0.632);
 border-radius: 10%;
 text-align: center;
 font-size: 125%;
-padding: 35px 10px;
+padding: 35px;
 }
 
 #staff-picture {
@@ -126,6 +126,27 @@ padding: 35px 10px;
 #staff-picture h2 {
     color:#ffffff;
     font-size: 175%;
+}
+
+#activities {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+#activities div {
+    background-color: gold;
+    border-radius: 10%;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    font-size: 125%;
+}
+
+#activities ul {
+    list-style-type: none;
 }
 
 #meetup {
