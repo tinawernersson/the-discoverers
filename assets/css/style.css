@@ -37,6 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    font-size: 150%;
 }
 
 header a {
@@ -167,7 +168,19 @@ padding-top: 35px;
 }
 
 #contact {
+text-align: center;
+display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+    width:100%;
+}
 
+.contact-information {
+    background-color: #ffffff;
+    margin-top: 35px;
+    font-size: 125%;
+    border-radius: 10%;
 }
 
 /*Footer*/
