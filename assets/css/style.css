@@ -3,9 +3,9 @@
 
 /*asterisk wildcard selector to override default styles added by the browser*/
 * {
-    padding:
-    margin: 
-    box-sizing:
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /*General styles*/
@@ -64,30 +64,32 @@ header a {
 main {
 /*Makes main element take up any surplus space to push down footer element*/
 flex: 1 0 auto;
-    margin-top: ;
+    margin-top: 16px;
 }
 
 /*Hero section*/
 #hero {
+    background: url(../the-discoverers-pics/pexels-yan-krukau-8613319.webp) no-repeat center center/cover;
+    height: 800px;
+    width: 100%;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
-    background: url(../the-discoverers-pics/pexels-yan-krukau-8613319.webp) no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    border-radius: 18px;
-    
+    align-items: center; 
 }
 
 #cover-text {
     background-color: rgba(255, 255, 255, 0.763);
     font-size: 125%;
 text-align:center;
-    position: relative;
-    width: 35vw;
-    height: 35vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50% 50%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 
 #slogan {
@@ -96,26 +98,29 @@ text-align:center;
 
 #about {
     display: flex;
-    flex-direction: column;
-    padding-top: 30px 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 35px 
 }
 #presentation {
-width: 50%;
-height: 50%;
+width: 600px;
+height: 450px;
 background-color: rgba(255, 255, 255, 0.763);
-border-radius: 30%;
+border-radius: 10%;
 text-align: center;
-padding: 20px 10px;
+font-size: 125%;
+padding: 35px 10px;
 }
 
 #staff-picture {
     display: flex;
     justify-content: center;
-    height: 650px;
-    width: 60%;
-    position: relative;
+    height: 450px;
+    width: 650px;
+    position:relative;
     background: url(../the-discoverers-pics/pexels-fauxels-3184398.webp) no-repeat center center/cover;
-    border-radius: 25%;
+    border-radius: 10%;
 }
 
 #staff-picture h2 {
