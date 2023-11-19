@@ -150,7 +150,20 @@ padding: 35px;
 }
 
 #meetup {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+padding-top: 35px;
+}
 
+.meetup-times {
+    font-size: 125%;
+    text-align: center;
+    background-color: #39b5dbbd;
+    width: 350px;
+    height: 225px;
+    border-radius: 10%;
+    padding: 20px;
 }
 
 #contact {
