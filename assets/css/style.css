@@ -10,7 +10,7 @@
 
 /*General styles*/
 body {
-    background-color: #bebebe;
+    background-color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ p {
 
 /*header*/
 header {
-    background-color: #bebebe;
+    background-color: #ffffff;
     position: absolute;
     z-index: 99;
     width: 100%;
@@ -83,7 +83,7 @@ flex: 1 0 auto;
 }
 
 #cover-text {
-    background-color: rgba(191, 191, 191, 0.765);
+    background-color: rgba(255, 255, 255, 0.765);
     font-size: 115%;
 text-align:center;
     width: 20vw;
@@ -276,6 +276,7 @@ flex-direction: column;
 
 
 /*Footer*/
+
 
 #social-media {
 text-align: center;
