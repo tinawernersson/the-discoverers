@@ -30,7 +30,7 @@ p {
 
 /*header*/
 header {
-    background-color: #ffffff;
+    background-color: #bebebe;
     position: absolute;
     z-index: 99;
     width: 100%;
@@ -38,6 +38,7 @@ header {
     justify-content: space-between;
     align-items: baseline;
     font-size: 150%;
+    padding-bottom: 15px;
 }
 
 header a {
@@ -45,7 +46,7 @@ header a {
     color: inherit;
 }
 
-#menu {
+#menu ul {
     font-size: 150%;
     font-family: 'Patrick Hand SC', sans-serif;
     letter-spacing: 4px;
@@ -56,8 +57,10 @@ header a {
     justify-content: space-evenly;
 }
 
-#menu li {
-    margin-bottom: 1em;
+
+
+#logo {
+    padding-left: 20px;
 }
 
 /*Main*/
@@ -80,7 +83,7 @@ flex: 1 0 auto;
 }
 
 #cover-text {
-    background-color: rgba(255, 255, 255, 0.763);
+    background-color: rgba(191, 191, 191, 0.765);
     font-size: 125%;
 text-align:center;
     width: 20vw;
@@ -167,23 +170,29 @@ padding-top: 35px;
     padding: 20px;
 }
 
-#contact {
+#contact > div {
 text-align: center;
 display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+flex-direction: row;
+justify-content: space-evenly;
     height: 150px;
     width:100%;
+    margin-bottom: 50px;
+    margin-top: 45px;
 }
 
-.contact-information {
+.contact-information div {
     background-color: #ffffff;
-    margin-top: 35px;
     font-size: 125%;
-    border-radius: 10%;
+    border-radius: 15%;
+    width: 265px;
+    height: 100px;
+    padding: 10px;
+
 }
 
 /*Footer*/
+
 #social-media {
 text-align: center;
     padding: 20px 0;
