@@ -58,7 +58,7 @@ header a {
     justify-content: space-evenly;
 }
 
-.active {
+li {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -222,7 +222,7 @@ flex-direction: column;
 }
 
 #signup {
-    background: url('../the-discoverers-pics/pexels-pavel-danilyuk-8422173.webp');
+    background: url('../pictures/form-image.webp');
     background-size: cover;
     background-position: 75%;
     flex-grow: 1;
@@ -269,7 +269,7 @@ flex-direction: column;
 }
 
 #thankyou-page {
-    background: url('../the-discoverers-pics/pexels-pavel-danilyuk-8422173.webp');
+    background: url('../pictures/form-image.webp');
     background-size: cover;
     background-position: 75%;
     flex-grow: 1;
