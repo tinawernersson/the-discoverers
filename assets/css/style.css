@@ -140,7 +140,7 @@ padding: 35px;
 
 #activities {
     display:flex;
-    flex-direction: row;
+    flex-direction: auto;
     justify-content: center;
     padding-top: 35px;
 }
@@ -303,3 +303,38 @@ text-align: center;
 #social-media i {
     font-size: xx-large;
 }
+
+/*Media query for large or landscape phones*/
+@media screen and (min-width:576px) {
+    .photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/*Media query: tablets and larger (768 px and up)*/
+@media screen and (min-width:768px) {
+
+    .photos {
+        column-count: 3;
+        column-gap: 0;
+    }
+}
+
+    /*Large media devices (laptops and desktops 992px or larger)*/
+    @media screen and (min-width:992px) {
+
+        .photos {
+            column-count: 4;
+            column-gap: 0;
+        }
+    }
+
+    /*Bigger media devices (1200px and up)*/
+    @media screen and (min-width:1200px) {
+
+        .photos {
+            column-count: 4;
+            column-gap: 0;
+        }
+    }
