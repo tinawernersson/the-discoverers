@@ -198,19 +198,21 @@ justify-content: space-evenly;
     width: 265px;
     height: 100px;
     padding: 10px;
-
 }
 
 /*Gallery page*/
 
-#gallery {
-    margin-top: 63px;
+.hidden-heading {
+    display:none;
 }
 
 .photos {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;   
+    row-gap: 10px;
+    margin-inline-end: 10px;    
     }
 
 /*Sign up page*/
@@ -221,8 +223,6 @@ flex: 1 0 auto;
 margin-top: 75px;
 display:flex;
 flex-direction: column;
-
-
 }
 
 #signup {
@@ -419,9 +419,25 @@ li {
     
     }
 
+    /*Gallery page*/
+
+    .photos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 5px; 
+        margin-block-end: 5px;; 
+        }
+
 /*Footer*/
 #social-media i {
     font-size: large;
+}
+
+/*Gallery page*/
+.photos {
+    column-count: 2;
+    column-gap: 0;
 }
 
 }
