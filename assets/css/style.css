@@ -6,7 +6,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 100%;
 }
 
 /*General styles*/
@@ -33,7 +32,6 @@ p {
 header {
     background-color: #ffffff;
     position: absolute;
-    z-index: 99;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -85,15 +83,15 @@ flex: 1 0 auto;
     border-radius: 25px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 #cover-text {
     background-color: rgba(255, 255, 255, 0.765);
     font-size: 115%;
 text-align:center;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     border-radius: 50% 50%;
     padding: 10px;
     display: flex;
@@ -121,14 +119,14 @@ background-color: rgba(71, 192, 65, 0.632);
 border-radius: 10%;
 text-align: center;
 font-size: 125%;
-padding: 35px;
+padding: 20px;
 }
 
 #staff-picture {
     display: flex;
     justify-content: center;
-    height: 450px;
-    width: 650px;
+    max-height: auto;
+    width: 50%;
     position:relative;
     background: url(../pictures/staff-picture.webp) no-repeat center center/cover;
     border-radius: 10%;
@@ -166,6 +164,7 @@ padding: 35px;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
+margin-top: 25px;
 }
 
 .meetup-times {
@@ -187,7 +186,7 @@ flex-direction: row;
 justify-content: space-evenly;
     height: 150px;
     width:100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 45px;
 }
 
@@ -305,7 +304,7 @@ text-align: center;
 }
 
 /*Media query for small phones*/
-@media screen and (min-width:260px) {
+@media screen and (min-width:320px) {
 
     /*Header*/
     h1 {
@@ -337,14 +336,11 @@ li {
         border-radius: 25px;
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
 
     #cover-text {
         font-size: 75%;
-        width: 60vw;
-        height: 60vw;
-        padding: 10px;
         display: flex;
         flex-direction: column;
 }
@@ -471,6 +467,7 @@ li {
         #thankyou {
             font-size: large;
             width: 100%;
+            margin-bottom: 20px;
         }
 
 /*Footer*/
@@ -482,11 +479,44 @@ li {
 
 /*Media query for large or landscape phones*/
 @media screen and (min-width:576px) {
-    .photos {
-        column-count: 2;
-        column-gap: 0;
-    }
+    #cover-text {
+        font-size: 75%;
+        max-width: 20vw;
+        max-height: 20vw;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
 }
+
+/*About section*/
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#presentation {
+    width: 400px;
+    height: 300px;
+    font-size: small;
+    }
+
+    #presentation h3 {
+        font-size: 70%;
+    }
+
+    #staff-picture {
+        height: 350px;
+        width: 600px;
+        margin-top: 25px;
+    }
+
+    #staff-picture h2 {
+        font-size: 80%;
+    text-align:center;    
+    }
+
+    }
+
 
 /*Media query: tablets and larger (768 px and up)*/
 @media screen and (min-width:768px) {
