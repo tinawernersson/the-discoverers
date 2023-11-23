@@ -90,8 +90,8 @@ flex: 1 0 auto;
     background-color: rgba(255, 255, 255, 0.765);
     font-size: 115%;
 text-align:center;
-    width: 18vw;
-    height: 18vw;
+    max-width: 40vw;
+    max-height: 40vw;
     border-radius: 50% 50%;
     padding: 10px;
     display: flex;
@@ -343,6 +343,8 @@ li {
         font-size: 75%;
         display: flex;
         flex-direction: column;
+        height: 65vw;
+        width: 65vw;
 }
 /*About section*/
 #about {
@@ -351,9 +353,9 @@ li {
 }
 
 #presentation {
-    width: 260px ;
-    height: 300px;
-    font-size: 56%;
+    width: 290px ;
+    height: 350px;
+    font-size: 75%;
     }
 
     #presentation h3 {
@@ -361,8 +363,8 @@ li {
     }
 
     #staff-picture {
-        height: 180px;
-        width: 260px;
+        height: 350px;
+        width: 290px;
         margin-top: 25px;
     }
 
@@ -371,11 +373,12 @@ li {
     text-align:center;    
     }
 
+    /*Activities container*/
     #activities div {
         width: 550px;
         height: 350px;
         text-align: center;
-        font-size: 80%;
+        font-size: 87%;
     }
 
     #meetup {
@@ -386,7 +389,7 @@ li {
         
         .meetup-times {
             font-size: 80%;
-            width: 260px;
+            width: 290px;
             height: 150px;
             padding: 20px;
             margin-bottom: 20px;
@@ -414,11 +417,10 @@ li {
     /*Gallery page*/
 
     .photos {
-        display: flex;
-        justify-content: center;
         flex-direction: column;
         row-gap: 5px; 
         margin-block-end: 5px;
+        fit
         }
 
         /*Sign up page*/
@@ -429,22 +431,21 @@ li {
             text-align: center;
             border-radius: 25%;
             width: 300px;
-            height:820px;
+            height:550px;
             display:flex;
             justify-content: center;
         }
 
         #signup-form h2 {
-            font-size: 110%;
+            font-size: 85%;
         }
 
         .text-input {
             width: 80%;
-            height: 25px;
+            height: 15px;
             border: 2px solid black;
             border-radius: 2px;
-            margin: 5px 0 20px 0;
-            padding: 0 5px;
+            margin: 2px 0 8px 0;
          }
         
          .join {
