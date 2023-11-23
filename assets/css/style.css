@@ -90,8 +90,8 @@ flex: 1 0 auto;
     background-color: rgba(255, 255, 255, 0.765);
     font-size: 115%;
 text-align:center;
-    max-width: 40vw;
-    max-height: 40vw;
+    width: 40vw;
+    height: 40vw;
     border-radius: 50% 50%;
     padding: 10px;
     display: flex;
@@ -130,6 +130,7 @@ padding: 20px;
     position:relative;
     background: url(../pictures/staff-picture.webp) no-repeat center center/cover;
     border-radius: 10%;
+    padding: 20px;
 }
 
 #staff-picture h2 {
@@ -205,13 +206,13 @@ justify-content: space-evenly;
     display:none;
 }
 
-.photos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;   
+#gallery {
+    display: grid;
+    grid-template-rows: repeat 1fr;
     row-gap: 10px;
-    margin-inline-end: 10px;    
+    margin-inline-end: 10px;
+    max-width:100%;
+    max-height:100%;    
     }
 
 /*Sign up page*/
@@ -343,13 +344,15 @@ li {
         font-size: 75%;
         display: flex;
         flex-direction: column;
-        height: 65vw;
-        width: 65vw;
+        height: 60vw;
+        width: 60vw;
 }
 /*About section*/
 #about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #presentation {
@@ -363,13 +366,14 @@ li {
     }
 
     #staff-picture {
-        height: 350px;
-        width: 290px;
+        height: 200px;
+        width: 100%;
         margin-top: 25px;
+        padding:2px;
     }
 
     #staff-picture h2 {
-        font-size: 80%;
+        font-size: 70%;
     text-align:center;    
     }
 
@@ -384,6 +388,8 @@ li {
     #meetup {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 20px;
         }
         
@@ -400,6 +406,8 @@ li {
 #contact > div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
         height: 150px;
         width:100%;
         margin-bottom: 35px;
@@ -417,10 +425,11 @@ li {
     /*Gallery page*/
 
     .photos {
-        flex-direction: column;
-        row-gap: 5px; 
-        margin-block-end: 5px;
-        fit
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        width:100%;
+        height:100%;
         }
 
         /*Sign up page*/
@@ -478,8 +487,46 @@ li {
 
 }
 
+@media screen and (min-width:375px){
+    
+    #cover-text {
+        font-size:75%;
+        display: flex;
+        flex-direction: column;
+        height: 50vw;
+        width: 50vw;
+    
+    #staff-picture {
+        height: 250px;
+        width: 100%;
+        margin-top: 25px;
+        padding:2px;
+    }
+
+        /*Activities container*/
+        #activities div {
+            height: 300px;
+            
+
+}
+
+
 /*Media query for large or landscape phones*/
-@media screen and (min-width:576px) {
+@media screen and (min-width:768px) {
+    
+        /*Header*/
+        h1 {
+            font-size: 100%;
+        }
+    #menu {
+        font-size: medium;
+    }
+    
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
     #cover-text {
         font-size: 75%;
         max-width: 20vw;
@@ -492,53 +539,84 @@ li {
 /*About section*/
 #about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #presentation {
-    width: 400px;
-    height: 300px;
-    font-size: small;
+    width: 370px;
+    height: 450px;
+    font-size: medium;
     }
 
     #presentation h3 {
-        font-size: 70%;
+        font-size: 100%;
     }
 
     #staff-picture {
-        height: 350px;
-        width: 600px;
-        margin-top: 25px;
+        height: 450px;
+        width: 85%;
     }
 
     #staff-picture h2 {
-        font-size: 80%;
+        font-size: 100%;
     text-align:center;    
     }
 
+        /*Activities container*/
+        #activities div {
+            width: 550px;
+            height: 300px;
+            text-align: center;
+            font-size: 100%;
+        }
+    
+        #meetup {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            }
+            
+            .meetup-times {
+                font-size: 100%;
+                width: 290px;
+                height: 200px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+/*Contact section*/
+
+#contact > div {
+    display: flex;
+    flex-direction: row;
+        height: 100px;
+        width:100%;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+    
+    .contact-information div {
+        font-size: 100%;
+        width: 260px;
+        height: 100px;
+        padding: 10px;
+    
+    }
+
+    /*Footer*/
+    #social-media i {
+        font-size: xx-large;
     }
 
 
-/*Media query: tablets and larger (768 px and up)*/
-@media screen and (min-width:768px) {
 
-    .photos {
-        column-count: 3;
-        column-gap: 0;
     }
-}
+
 
     /*Large media devices (laptops and desktops 992px or larger)*/
     @media screen and (min-width:992px) {
-
-        .photos {
-            column-count: 4;
-            column-gap: 0;
-        }
-    }
-
-    /*Bigger media devices (1200px and up)*/
-    @media screen and (min-width:1200px) {
 
         .photos {
             column-count: 4;
