@@ -10,11 +10,14 @@
 }
 
 /*General styles*/
-body {
+html, body {
     background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
 }
 
 h1,
@@ -32,13 +35,13 @@ p {
 /*header*/
 header {
     background-color: #ffffff;
-    position: absolute;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     font-size: 150%;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 header a {
@@ -51,10 +54,10 @@ header a {
     font-family: 'Patrick Hand SC', sans-serif;
     letter-spacing: 4px;
     list-style-type: none;
-    padding: 0 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 5px;
+    margin-right: 5px;
 }
 
 li {
@@ -68,13 +71,7 @@ li {
     padding-left: 20px;
 }
 
-/*Main*/
 
-main {
-/*Makes main element take up any surplus space to push down footer element*/
-flex: 1 0 auto;
-    margin-top: 80px;
-}
 
 /*Hero section*/
 #hero {
@@ -89,12 +86,11 @@ flex: 1 0 auto;
 
 #cover-text {
     background-color: rgba(255, 255, 255, 0.765);
-    font-size: 115%;
-text-align:center;
-    width: 30vw;
-    height: 30vw;
+    font-size: 10vw;
+    text-align:center;
+    height: 200px;
+    width: 200px;
     border-radius: 50% 50%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,10 +119,11 @@ padding: 20px;
 }
 
 #staff-picture {
-    max-height: auto;
-    width: 50%;
-    position:relative;
-    background: url(../pictures/staff-picture.webp) no-repeat center center/cover;
+    height: 50vh;
+    width: 50vw;
+    background: url(../pictures/staff-picture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10%;
     padding: 20px;
 }
@@ -203,43 +200,32 @@ justify-content: space-evenly;
 .hidden-heading {
     display:none;
 }
-
-#gallery {
-    display: grid;
-    grid-template-rows: repeat 1fr;
-    row-gap: 10px;
-    margin-inline-end: 10px;
-    max-width:100%;
-    max-height:100%;    
-    }
-
 /*Sign up page*/
 
-#signup-page {
-display:flex;
-flex-direction: column;
-}
 
 #signup {
     background: url('../pictures/form-image.webp') no-repeat center center/cover;
-    background-size: cover;
-    background-position: 75%;
+    width: 100vw;
+    height: 100vh;
     flex-grow: 1;
    padding: 20px 10% 20px 10%;
    display: flex;
    justify-content: center;
+   align-items: center;
 }
 
 #signup-form {
     font-family: 'Patrick Hand SC', sans-serif;
     font-size: 110%;
     background-color: rgb(255, 217, 0, 75%);
-    padding: 30px;
     text-align: center;
     border-radius: 25%;
     width: 600px;
     display:flex;
     justify-content: center;
+    padding-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 50px;
 }
 
 .text-input {
@@ -271,7 +257,8 @@ flex-direction: column;
     background: url('../pictures/form-image.webp') no-repeat center center/cover;
     background-size: cover;
     background-position: 75%;
-   padding: 20px 10% 20px 10%;
+    padding: 20px 10% 20px 10%;
+    height: 100vh;
 }
 
 #thankyou {
@@ -313,9 +300,9 @@ text-align: center;
 }
 
 #menu ul {
-    display: flex;
     flex-direction: column;
 }
+
 
 li {
     margin-top: 3px;
@@ -329,8 +316,6 @@ li {
     }
 /*Hero section*/
    #hero {
-        height: 500px;
-        max-width: 100%;
         border-radius: 25px;
         display: flex;
         justify-content: center;
@@ -339,10 +324,6 @@ li {
 
     #cover-text {
         font-size: 75%;
-        display: flex;
-        flex-direction: column;
-        height: 60vw;
-        width: 60vw;
 }
 /*About section*/
 #about {
@@ -353,7 +334,7 @@ li {
 }
 
 #presentation {
-    width: 290px ;
+    width: 290px;
     height: 350px;
     font-size: 75%;
     }
@@ -362,16 +343,16 @@ li {
         font-size: 70%;
     }
 
+
     #staff-picture {
-        height: 200px;
-        width: 100%;
-        margin-top: 25px;
-        padding:2px;
+        width: 500px;
+        height: 350px;
+        margin-top: 30px;
     }
 
     #staff-picture h2 {
-        font-size: 70%;
-    text-align:center;    
+        font-size: 100%;
+        text-align:center;    
     }
 
     /*Activities container*/
@@ -421,23 +402,20 @@ li {
 
     /*Gallery page*/
 
-    .photos {
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        width:100%;
-        height:100%;
-        }
+    #gallery {
+        display: flex;
+        width: 100%;
+    }
+
 
         /*Sign up page*/
 
         #signup-form {
             font-size: 75%;
-            padding: 15px;
             text-align: center;
             border-radius: 25%;
+            margin-top: 50px;
             width: 300px;
-            height:550px;
             display:flex;
             justify-content: center;
         }
@@ -476,6 +454,7 @@ li {
             width: 100%;
             margin-bottom: 20px;
         }
+    }
 
 /*Footer*/
 #social-media i {
@@ -500,11 +479,7 @@ li {
     
     #cover-text {
         font-size: 75%;
-        width: 25vw;
-        height: 25vw;
         padding: 10px;
-        display: flex;
-        flex-direction: column;
 }
 
 /*About section*/
@@ -527,12 +502,11 @@ li {
 
     #staff-picture {
         height: 450px;
-        width: 85%;
     }
 
     #staff-picture h2 {
         font-size: x-large;
-    text-align:center;    
+        text-align:center;    
     }
 
         /*Activities container*/
@@ -573,16 +547,13 @@ li {
         font-size: 100%;
         width: 260px;
         height: 100px;
-        padding: 10px;
-    
+        padding: 10px;    
     }
 
     /*Gallery page*/
 
 .photos {
     margin-bottom: 25px;
-   column-count: 3;
-   column-gap: 0;
 }
 
 /*Sign up page*/
@@ -600,23 +571,29 @@ font-size: 110%;
 #thankyou-page {
     display:flex;
     align-items: center;
-margin-bottom: 25px;
-background-position: center;
+    margin-bottom: 25px;
+    background-position: center;
 }
 
     /*Footer*/
     #social-media i {
         font-size: xx-large;
     }
+}
 
     /*Large media devices (laptops and desktops 992px or larger)*/
     @media screen and (min-width:992px) {
+
+        #cover-text {
+            height: 400px;
+            width: 400px;
+            font-size: 150%
+        }
 
         #about {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             margin-top: 25px;
+            }
         }
-      
-    }
