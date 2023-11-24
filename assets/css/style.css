@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width:100%;
 }
 
 /*General styles*/
@@ -90,8 +91,8 @@ flex: 1 0 auto;
     background-color: rgba(255, 255, 255, 0.765);
     font-size: 115%;
 text-align:center;
-    width: 40vw;
-    height: 40vw;
+    width: 30vw;
+    height: 30vw;
     border-radius: 50% 50%;
     padding: 10px;
     display: flex;
@@ -107,14 +108,13 @@ text-align:center;
 /*Presentation section*/
 #about {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin-top: 25px;
 }
 #presentation {
 width: 600px;
-height: 475px;
+height: 550px;
 background-color: rgba(71, 192, 65, 0.632);
 border-radius: 10%;
 text-align: center;
@@ -123,8 +123,6 @@ padding: 20px;
 }
 
 #staff-picture {
-    display: flex;
-    justify-content: center;
     max-height: auto;
     width: 50%;
     position:relative;
@@ -223,7 +221,7 @@ flex-direction: column;
 }
 
 #signup {
-    background: url('../pictures/form-image.webp');
+    background: url('../pictures/form-image.webp') no-repeat center center/cover;
     background-size: cover;
     background-position: 75%;
     flex-grow: 1;
@@ -270,10 +268,9 @@ flex-direction: column;
 }
 
 #thankyou-page {
-    background: url('../pictures/form-image.webp');
+    background: url('../pictures/form-image.webp') no-repeat center center/cover;
     background-size: cover;
     background-position: 75%;
-    flex-grow: 1;
    padding: 20px 10% 20px 10%;
 }
 
@@ -485,38 +482,12 @@ li {
     font-size: large;
 }
 
-}
-
-@media screen and (min-width:375px){
-    
-    #cover-text {
-        font-size:75%;
-        display: flex;
-        flex-direction: column;
-        height: 50vw;
-        width: 50vw;
-    
-    #staff-picture {
-        height: 250px;
-        width: 100%;
-        margin-top: 25px;
-        padding:2px;
-    }
-
-        /*Activities container*/
-        #activities div {
-            height: 300px;
-            
-
-}
-
-
 /*Media query for large or landscape phones*/
 @media screen and (min-width:768px) {
     
         /*Header*/
         h1 {
-            font-size: 100%;
+            font-size: xx-large;
         }
     #menu {
         font-size: medium;
@@ -529,8 +500,8 @@ li {
     
     #cover-text {
         font-size: 75%;
-        max-width: 20vw;
-        max-height: 20vw;
+        width: 25vw;
+        height: 25vw;
         padding: 10px;
         display: flex;
         flex-direction: column;
@@ -560,7 +531,7 @@ li {
     }
 
     #staff-picture h2 {
-        font-size: 100%;
+        font-size: x-large;
     text-align:center;    
     }
 
@@ -575,6 +546,7 @@ li {
         #meetup {
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
             margin-top: 20px;
             }
             
@@ -605,21 +577,46 @@ li {
     
     }
 
+    /*Gallery page*/
+
+.photos {
+    margin-bottom: 25px;
+   column-count: 3;
+   column-gap: 0;
+}
+
+/*Sign up page*/
+
+#signup h2 {
+font-size: 110%;
+}
+
+#signup label {
+    font-size: 110%;
+}
+
+/*Thank you page*/
+
+#thankyou-page {
+    display:flex;
+    align-items: center;
+margin-bottom: 25px;
+background-position: center;
+}
+
     /*Footer*/
     #social-media i {
         font-size: xx-large;
     }
 
-
-
-    }
-
-
     /*Large media devices (laptops and desktops 992px or larger)*/
     @media screen and (min-width:992px) {
 
-        .photos {
-            column-count: 4;
-            column-gap: 0;
+        #about {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 25px;
         }
+      
     }
