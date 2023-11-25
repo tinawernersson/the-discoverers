@@ -54,5 +54,9 @@ The website is responsive and can be used on devices such as laptops, mobile dev
   - It is featured on all three pages and the thankyou page.
   - Includes links to the logo, home page, gallery, and sign-up page.
   - It is identical in design across the pages.
+  - When the user hover over the navbar the links turn red.
   - The user will never have to use the "back" navigation button in the web browser thanks to the easy navigation from one page to another on the website.
-  
+
+
+  ![navigation](documentation/header.png)
+  ![navigation-hover](documentation/navbar-hover.png)
