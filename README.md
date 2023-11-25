@@ -90,4 +90,18 @@ The website is responsive and can be used on devices such as laptops, mobile dev
 
   - This section contains contact and location information
 
-![contact]()
+![contact](documentation/contact-section.png)
+
+- Footer, Social media
+
+  - Holds information to The Discoverers social media platforms, all opens in new tabs for a better user experience.
+  - Facilitates for the users and gives them an additional contact channel.
+
+  ![footer](documentation/footer.png)
+
+- Gallery
+  
+  - Provides users with pictures from the preschool to make it look more appealing and interesting.
+  - The users get the possibility to se the preschool from the inside and se what they offering the children.
+
+  ![gallery](documentation/gallery.png)
