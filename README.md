@@ -60,3 +60,13 @@ The website is responsive and can be used on devices such as laptops, mobile dev
 
   ![navigation](documentation/header.png)
   ![navigation-hover](documentation/navbar-hover.png)
+
+- Main heading
+
+  - In the home page there is a hero section with a picture of childrens hands in a circle with a heading that says "The Discoverers Preschool".
+  - The Gallery page has a hidden heading that says "Gallery".
+  - In the sign up page the heading is in the form that says "Register your child here!"
+
+  ![headings](documentation/hero-section.png)
+
+  ![headings](documentation/heading-signup.png)
