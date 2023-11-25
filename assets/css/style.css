@@ -50,7 +50,7 @@ header a {
 }
 
 #menu ul {
-    font-size: 80%;
+    font-size: 120%;
     font-family: 'Patrick Hand SC', sans-serif;
     letter-spacing: 4px;
     list-style-type: none;
@@ -297,10 +297,10 @@ text-align: center;
 
     /*Header*/
     h1 {
-        font-size: 60%;
+        font-size: 80%;
     }
 #menu {
-    font-size: x-small;
+    font-size: small;
 }
 
 #menu ul {
@@ -355,7 +355,7 @@ li {
     }
 
     #staff-picture h2 {
-        font-size: 100%;
+        font-size: 75%;
         text-align:center;    
     }
 
