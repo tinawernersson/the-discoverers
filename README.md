@@ -30,7 +30,12 @@ The idea of the webpage is to attract parents to register their child for this p
    * Find contact and location information.
    * Have a look at the site's colorful gallery.
 
-   ## Typography
+   ### Colors
+
+   Colors I have used on the website
+   ![color-palette](documentation/color-palette.png)
+
+   ### Typography
 
 For The Discoverers Preschool I used Google Fonts as it is easy to use, accessible and make the design of the page more appealing.
 
@@ -251,3 +256,4 @@ By forking the repository, we make a copy of the original repository on our GitH
 ### Media 
 
  * [Pexels](https://www.pexels.com/) free stock photos, royalty free images.
+ * [Coolors](https://coolors.co/) to make my color-palette.
