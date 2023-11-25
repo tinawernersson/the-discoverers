@@ -70,3 +70,18 @@ The website is responsive and can be used on devices such as laptops, mobile dev
   ![headings](documentation/hero-section.png)
 
   ![headings](documentation/heading-signup.png)
+
+- First section, Information about the preschool
+
+  - The green box contains attractive and useful information about The Discoverers Preschool and a link to the sign up page.
+  - The second box is a picture of the staff wich represent the preschool.
+
+  ![section](documentation/about-section.png)
+
+- Second section, after school activites
+  
+  - In this section are two different after school activities offered, a craft session and a play session.
+  - The yellow box contains a short introduction on what the activities offers.
+  - The blue boxes contains information on place, day and time when each activity is offered.
+
+  ![section](documentation/activities.png)
