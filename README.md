@@ -85,3 +85,9 @@ The website is responsive and can be used on devices such as laptops, mobile dev
   - The blue boxes contains information on place, day and time when each activity is offered.
 
   ![section](documentation/activities.png)
+
+- Third section, contact
+
+  - This section contains contact and location information
+
+![contact]()
