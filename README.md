@@ -112,3 +112,96 @@ The website is responsive and can be used on devices such as laptops, mobile dev
   - All fields are mandatory except for "second parents name", and that is because if it's only one parent to the child.
 
   ![form](documentation/signup-form.png)
+
+- Thank you page
+
+  - When the user's filled the form they will be redirected to a page that says "Thank you for your registration!.."
+  - The page will automatically go back to the home page after 20 seconds if the user don't do anything. For better user experience I have added a paragraph that informs the user about this redirection.
+
+  ![thankyou](documentation/thankyou-page.png)
+
+### Features Left to Implement
+
+- A contact link in the home page for teachers who's searching for a job.
+
+In the future, there could be a link to a platform for parents who already have their children in this preschool. It can contain registration of childrens length of stay, general information from the preschool to the parents and individual educational progression plan for the children.
+
+## Technologies Used
+
+ * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+ * [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+## Frameworks, Libraries & Programs Used
+
+ * [Gitpod](https://www.gitpod.io/)
+    * To write the code.
+ * [Github](https://github.com/)
+    * Deployment of the website and storing the files online.
+* [Git](https://git-scm.com/)
+    * For version control
+ * [Google Fonts](https://fonts.google.com/)
+    * Import main font the website.
+* [Am I Responsive](https://ui.dev/amiresponsive)
+    * Mockup picture for the README file.
+
+    ## Testing
+
+The W3C Markup Validator and W3C CSS Validator services were used to validate every page of the project to ensure there were no errors.
+
+ * [W3C Markup Validator](https://validator.w3.org/)
+ * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+ ### Validation results
+
+Homepage
+ ![homepage](documentation/html-checker-home-page.png)
+ Gallery page
+ ![gallery](documentation/html-checker-gallery-page.png)
+ Sign up page
+ ![signup](documentation/html-checker-signup-page.png)
+ Thank you page
+ ![thankyou](documentation/html-checker-thankyou-page.png)
+
+CSS-file
+ ![css](documentation/css-validation.png)
+
+
+### Manual Testing
+
+The website was tested on Google Chrome, Microsoft Edge, and Safari browsers.
+The website was viewed on a laptop, Ipad tablet and Samsung Galaxy S21 mobile phone.
+Testing was done to ensure links between pages are working correctly on all pages.
+Dev Tools was used to test how the site looks on various screen sizes.
+
+## Lighthouse report
+
+### Mobile screeen
+
+Home page
+![homepage](documentation/lighthouse-homepage-mobile.png)
+
+Gallery Page
+![gallerypage](documentation/gallerypage-lighthouse.png)
+
+Sign up page
+![signuppage](documentation/signup-lighthouse.png)
+
+Thank you page
+![thankyoupage](documentation/thankyou-lighthouse.png)
+
+### Desktop
+
+Home page
+![homepage-desktop](documentation/homepage-lighthouse-desktop.png)
+
+Gallery page
+![gallery-desktop](documentation/gallery-lighthouse-desktop.png)
+
+Sign up page
+![signup-desktop](documentation/signup-lighthouse-desktop.png)
+
+Thank you page
+![thankypu-desktop](documentation/thankyou-lighthouse-desktop.png)
+
+## Bug fixes
+The reason the website get low performance score in Lighthouse is probably because of the high resoluted pictures, the files is too big and needs to be downsized.
