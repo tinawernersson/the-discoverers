@@ -29,3 +29,15 @@ The idea of the webpage is to attract parents to register their child for this p
 
    * Find contact and location information.
    * Have a look at the site's colorful gallery.
+
+   ## Typography
+
+For The Discoverers Preschool I used Google Fonts as it is easy to use, accessible and make the design of the page more appealing.
+
+Here are the links to the fonts and icons I've used in my project:
+
+- [Patrick Hand SC](https://fonts.google.com/specimen/Patrick+Hand+SC) was used for all primary texts such as header, headings and in the sign up form.
+
+- [Nunito](https://fonts.google.com/specimen/Nunito) was used for all other secondary text.
+
+- [Font Awesome](https://fontawesome.com) icons were used on the home page and sign up form, such as the social media icons in the footer (on all pages).
