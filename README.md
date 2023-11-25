@@ -105,3 +105,10 @@ The website is responsive and can be used on devices such as laptops, mobile dev
   - The users get the possibility to se the preschool from the inside and se what they offering the children.
 
   ![gallery](documentation/gallery.png)
+
+- Sign up page
+
+  - Holds a form where the user can register their interest for having their child in The Discoverers preschool. 
+  - All fields are mandatory except for "second parents name", and that is because if it's only one parent to the child.
+
+  ![form](documentation/signup-form.png)
